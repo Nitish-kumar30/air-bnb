@@ -15,7 +15,7 @@ import { photoTourSections } from "@/lib/photo-tour-data";
 export default function PhotoTourPage() {
   return (
     <div className="min-h-screen bg-white">
-      <PhotoTourHeader roomId={listing.id} />
+      <PhotoTourHeader />
       <PhotoTourThumbnails sections={photoTourSections} />
 
       <main className="mx-auto max-w-[1120px] px-6 pb-20">
