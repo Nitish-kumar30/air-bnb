@@ -9,40 +9,40 @@ export const photoTourSections: PhotoTourSection[] = [
   {
     title: "Living room 2",
     subtitle: "Ceiling fan · Hot tub",
-    photoNumbers: [4],
+    photoNumbers: [4, 5, 6, 7],
   },
   {
     title: "Full kitchen",
-    subtitle: "Refrigerator · Stove · Dishwasher",
-    photoNumbers: [5, 6],
+    subtitle: "Refrigerator · Microwave · Dishes and silverware",
+    photoNumbers: [8, 9, 10],
   },
   {
     title: "Bedroom",
-    subtitle: "1 double bed · Air conditioning",
-    photoNumbers: [7, 8],
+    subtitle: "1 double bed · Air conditioning · Wardrobe",
+    photoNumbers: [11, 12, 13],
   },
   {
     title: "Full bathroom",
-    subtitle: "Bathtub · Hair dryer",
-    photoNumbers: [9, 10],
+    subtitle: "Bathtub · Hair dryer · Shampoo",
+    photoNumbers: [14, 15, 16],
   },
   {
     title: "Gym",
     subtitle: "Exercise equipment",
-    photoNumbers: [11, 12],
+    photoNumbers: [17, 18, 19],
   },
   {
     title: "Exterior",
-    photoNumbers: [13, 14, 15],
+    photoNumbers: [20, 21, 22],
   },
   {
     title: "Pool",
     subtitle: "Pool",
-    photoNumbers: [16, 17, 18],
+    photoNumbers: [23, 24, 25],
   },
   {
     title: "Additional photos",
-    photoNumbers: [19],
+    photoNumbers: [26],
   },
 ];
 
