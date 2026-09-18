@@ -21,6 +21,17 @@ import {
   Gift,
   Sparkles,
   Image as ImageIcon,
+  MountainSnow,
+  Umbrella,
+  Home,
+  Trees,
+  TentTree,
+  House,
+  PartyPopper,
+  Palmtree,
+  Sailboat,
+  Tent,
+  Building2,
   LucideIcon,
 } from "lucide-react";
 
@@ -47,17 +58,30 @@ export const iconMap: Record<string, LucideIcon> = {
   gift: Gift,
   sparkles: Sparkles,
   image: ImageIcon,
+  "mountain-snow": MountainSnow,
+  umbrella: Umbrella,
+  home: Home,
+  trees: Trees,
+  "tent-tree": TentTree,
+  house: House,
+  "party-popper": PartyPopper,
+  palmtree: Palmtree,
+  sailboat: Sailboat,
+  tent: Tent,
+  "building-2": Building2,
 };
 
 export function Icon({
   name,
   size = 24,
   className = "",
+  strokeWidth,
 }: {
   name: string;
   size?: number;
   className?: string;
+  strokeWidth?: number;
 }) {
   const Cmp = iconMap[name] ?? Sparkles;
-  return <Cmp size={size} className={className} />;
+  return <Cmp size={size} className={className} strokeWidth={strokeWidth} />;
 }
