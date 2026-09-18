@@ -12,6 +12,9 @@ import AvailabilityCalendar from "@/components/listing/AvailabilityCalendar";
 import Reviews from "@/components/listing/Reviews";
 import LocationSection from "@/components/listing/LocationSection";
 import BookingCard from "@/components/listing/BookingCard";
+import MeetYourHost from "@/components/listing/MeetYourHost";
+import ThingsToKnow from "@/components/listing/ThingsToKnow";
+import MoreStaysNearby from "@/components/listing/MoreStaysNearby";
 import { listing } from "@/lib/mock-data";
 
 export default function RoomPage() {
@@ -21,7 +24,7 @@ export default function RoomPage() {
 
       <main className="mx-auto max-w-[1120px] px-6 pt-6 pb-20">
         <TitleBar title={listing.title} />
-        <Gallery count={listing.photoCount} />
+        <Gallery roomId={listing.id} count={listing.photoCount} />
       </main>
 
       <StickyTabs listing={listing} />
@@ -63,6 +66,14 @@ export default function RoomPage() {
             <BookingCard listing={listing} />
           </div>
         </div>
+
+        <MeetYourHost listing={listing} />
+        <ThingsToKnow
+          cancellationPolicy={listing.cancellationPolicy}
+          houseRules={listing.houseRules}
+          safetyItems={listing.safetyItems}
+        />
+        <MoreStaysNearby stays={listing.nearbyStays} />
       </main>
     </div>
   );

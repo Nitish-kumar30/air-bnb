@@ -43,6 +43,31 @@ export type Review = {
   text: string;
 };
 
+export type CoHost = {
+  name: string;
+  avatarInitial: string;
+};
+
+export type ThingToKnowGroup = {
+  icon: string;
+  title: string;
+  items: string[];
+};
+
+export type NearbyStay = {
+  id: string;
+  title: string;
+  price: number;
+  rating: number;
+  photoNumber: number;
+};
+
+export type PhotoTourSection = {
+  title: string;
+  subtitle?: string;
+  photoNumbers: number[];
+};
+
 export type Listing = {
   id: string;
   title: string;
@@ -76,5 +101,16 @@ export type Listing = {
   highlightTags: HighlightTag[];
   reviews: Review[];
   neighbourhood: string;
-  neighbourhoodHighlights: string[];
+  neighbourhoodHighlights: string;
+  hostRating: number;
+  hostReviewCount: number;
+  hostResponseRate: string;
+  hostResponseTime: string;
+  hostBornDecade: string;
+  hostSchool: string;
+  coHosts: CoHost[];
+  cancellationPolicy: string;
+  houseRules: string[];
+  safetyItems: string[];
+  nearbyStays: NearbyStay[];
 };

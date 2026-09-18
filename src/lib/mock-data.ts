@@ -140,8 +140,41 @@ export const listing: Listing = {
     },
   ],
   neighbourhood: "Candolim, Goa, India",
-  neighbourhoodHighlights: [
-    "Candolim Beach is a 10 minute walk away.",
-    "Popular cafés and restaurants are within walking distance.",
+  neighbourhoodHighlights:
+    "Located in the heart of Candolim, Amor de Goa offers a peaceful stay with easy access to beaches, cafés, and popular attractions.",
+  hostRating: 4.68,
+  hostReviewCount: 1463,
+  hostResponseRate: "100%",
+  hostResponseTime: "Responds within an hour",
+  hostBornDecade: "Born in the 80s",
+  hostSchool: "Where I went to school: NIZWAR GOA",
+  coHosts: [
+    { name: "Shivam", avatarInitial: "S" },
+    { name: "Aman Dev Mishra", avatarInitial: "A" },
+    { name: "Maria Karea Miyanda", avatarInitial: "M" },
+    { name: "Simral", avatarInitial: "S" },
+    { name: "Pallavi", avatarInitial: "P" },
+    { name: "Sahyadra", avatarInitial: "S" },
+    { name: "Sarat", avatarInitial: "S" },
+    { name: "Amana", avatarInitial: "A" },
+  ],
+  cancellationPolicy:
+    "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+  houseRules: [
+    "Check-in after 2:00 pm",
+    "Checkout before 11:00 am",
+    "2 guests maximum",
+  ],
+  safetyItems: [
+    "Carbon monoxide alarm not reported",
+    "Smoke alarm not reported",
+    "Exterior security cameras on property",
+  ],
+  nearbyStays: [
+    { id: "n1", title: "Beautiful flat with a view for life", price: 42599, rating: 4.95, photoNumber: 12 },
+    { id: "n2", title: "MAQNA - 1bhk with private pool", price: 142238, rating: 4.95, photoNumber: 13 },
+    { id: "n3", title: "Greenhouse Luxury Flat with plunge pool, Calangute", price: 154689, rating: 4.94, photoNumber: 14 },
+    { id: "n4", title: "The Tropical Studio | 5 mins to the beach", price: 152633, rating: 4.99, photoNumber: 15 },
+    { id: "n5", title: "Luxury Casa Bella 1BHK with plunge pool, Calangute", price: 159802, rating: 4.94, photoNumber: 16 },
   ],
 };

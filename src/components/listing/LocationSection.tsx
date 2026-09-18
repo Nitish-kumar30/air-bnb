@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Home, Minus, Plus, SearchIcon } from "lucide-react";
 
 export default function LocationSection({
@@ -5,8 +8,9 @@ export default function LocationSection({
   highlights,
 }: {
   neighbourhood: string;
-  highlights: string[];
+  highlights: string;
 }) {
+  const [expanded, setExpanded] = useState(false);
   return (
     <div id="location" className="py-6">
       <h2 className="mb-1 text-xl font-semibold">Where you&apos;ll be</h2>
@@ -43,11 +47,17 @@ export default function LocationSection({
       </p>
 
       <h3 className="mb-3 text-lg font-semibold">Neighbourhood highlights</h3>
-      <ul className="list-disc space-y-2 pl-5 text-black/70">
-        {highlights.map((h) => (
-          <li key={h}>{h}</li>
-        ))}
-      </ul>
+      <p className={`text-black/70 ${expanded ? "" : "line-clamp-2"}`}>
+        {highlights}
+      </p>
+      {!expanded && (
+        <button
+          onClick={() => setExpanded(true)}
+          className="mt-2 font-medium underline"
+        >
+          Show more
+        </button>
+      )}
     </div>
   );
 }
