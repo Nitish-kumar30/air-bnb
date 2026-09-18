@@ -3,7 +3,7 @@ import { Listing } from "./types";
 export const listing: Listing = {
   id: "1",
   title: "Romantic Jacuzzi 1BHK Candolim | Mirashya UG10",
-  photoCount: 5,
+  photoCount: 26,
   propertyType: "Entire serviced apartment",
   location: "Candolim, India",
   guests: 3,
